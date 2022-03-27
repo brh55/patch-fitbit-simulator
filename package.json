@@ -1,6 +1,6 @@
 {
 	"name": "patch-fitbit-simulator",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"description": "A simple CLI to patch the Fitbit OS Simulator with the new SSL certificate",
 	"license": "MIT",
 	"repository": "brh55/patch-fitbit-simulator",

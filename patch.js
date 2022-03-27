@@ -35,8 +35,8 @@ const downloadCert = () => {
 		log.start();
 		log.info('Downloading new cert...');
 
-		const certFileName = `${SIMULATOR_CERT_PATH}/fitbitcert.pem`;
-		const file = fs.createWriteStream(certFileName);
+		const certFile = `${SIMULATOR_CERT_PATH}/fitbitcert.pem`;
+		const file = fs.createWriteStream(certFile);
 		get(CERT_URI, response => {
 			response.pipe(file);
 		});
@@ -64,7 +64,7 @@ const patch = async () => {
 	log.succeed('Successfully copy over new cert');
 };
 
-(async () => {
+export default async function () {
 	try {
 		if (platform() !== 'darwin') {
 			throw new Error('Currently this only supports Mac OS, feel free to contribute and add other platforms');
@@ -80,4 +80,4 @@ const patch = async () => {
 		console.error(`Failed to patch simulator: ${error}`);
 		log.stop();
 	}
-})();
+};
