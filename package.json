@@ -14,7 +14,7 @@
 		"node": ">=12"
 	},
 	"files": [
-		"index.js",
+		"patch.js",
 		"cli.js"
 	],
 	"keywords": [

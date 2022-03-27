@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import patchFitbitSimulator from './index.js';
+import patchFitbitSimulator from './patch.js';
 
 console.log(patchFitbitSimulator());
