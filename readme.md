@@ -1,7 +1,7 @@
 # patch-fitbit-simulator
 > Only for Mac OS currently
 
-A simple CLI to patch the Fitbit OS Simulator certificate with the new SSL certificate for the Device Bridge to work properly in relation to this [issue](https://community.fitbit.com/t5/SDK-Development/Simulator-SSL-Problem/td-p/5002720/page/2.) - March 2022.
+A simple CLI to patch the Fitbit OS Simulator certificate with the new SSL certificate for the Device Bridge to work properly in relation to this [issue](https://community.fitbit.com/t5/SDK-Development/Simulator-SSL-Problem/td-p/5002720/page/2) - March 2022.
 
 
 This CLI will download the new SSL certificate into the correct directory, and back up the pre-existing SSL certificate. In addition, it will reboot the Fitbit OS Simulator once the patch is complete.
@@ -9,10 +9,11 @@ This CLI will download the new SSL certificate into the correct directory, and b
 
 ## Usage
 
+1. Download the package globally
 ```
 $ npm install --global patch-fitbit-simulator
 ```
-
+2. Execute the CLI command
 ```
 $ patch-fitbit-simulator
 ```
